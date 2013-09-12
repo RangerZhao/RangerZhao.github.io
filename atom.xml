@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[RangerZhao's Code House]]></title>
+  <link href="http://rangerzhao.github.io/atom.xml" rel="self"/>
+  <link href="http://rangerzhao.github.io/"/>
+  <updated>2013-09-12T09:49:49+08:00</updated>
+  <id>http://rangerzhao.github.io/</id>
+  <author>
+    <name><![CDATA[MinXing Zhao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
