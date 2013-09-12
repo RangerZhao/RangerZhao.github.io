@@ -2,15 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[RangerZhao's Code House]]></title>
-  <link href="http://rangerzhao.github.io/atom.xml" rel="self"/>
-  <link href="http://rangerzhao.github.io/"/>
-  <updated>2013-09-12T09:49:49+08:00</updated>
-  <id>http://rangerzhao.github.io/</id>
+  <link href="http://RangerZhao.github.io/atom.xml" rel="self"/>
+  <link href="http://RangerZhao.github.io/"/>
+  <updated>2013-09-12T13:31:39+08:00</updated>
+  <id>http://RangerZhao.github.io/</id>
   <author>
     <name><![CDATA[MinXing Zhao]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[my first blog]]></title>
+    <link href="http://RangerZhao.github.io/blog/2013/09/12/my-first-blog/"/>
+    <updated>2013-09-12T13:28:00+08:00</updated>
+    <id>http://RangerZhao.github.io/blog/2013/09/12/my-first-blog</id>
+    <content type="html"><![CDATA[<p>javascript
+alert(&ldquo;hello world!&rdquo;);</p>
+]]></content>
+  </entry>
   
 </feed>

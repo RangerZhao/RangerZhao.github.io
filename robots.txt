@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://rangerzhao.github.io/sitemap.xml 
+Sitemap: http://RangerZhao.github.io/sitemap.xml 
