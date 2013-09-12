@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[RangerZhao's Code House]]></title>
-  <link href="http://RangerZhao.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: myfirst | RangerZhao's Code House]]></title>
+  <link href="http://RangerZhao.github.io/blog/categories/myfirst/atom.xml" rel="self"/>
   <link href="http://RangerZhao.github.io/"/>
   <updated>2013-09-12T13:49:06+08:00</updated>
   <id>http://RangerZhao.github.io/</id>
