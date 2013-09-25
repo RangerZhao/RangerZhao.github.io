@@ -4,7 +4,7 @@
   <title><![CDATA[RangerZhao's Code House]]></title>
   <link href="http://RangerZhao.github.io/atom.xml" rel="self"/>
   <link href="http://RangerZhao.github.io/"/>
-  <updated>2013-09-25T16:48:06+08:00</updated>
+  <updated>2013-09-25T16:51:05+08:00</updated>
   <id>http://RangerZhao.github.io/</id>
   <author>
     <name><![CDATA[MinXing Zhao]]></name>
@@ -20,17 +20,17 @@
     <id>http://RangerZhao.github.io/blog/2013/09/14/android-and-python-0</id>
     <content type="html"><![CDATA[<p>之前遭遇了硬盘坏掉的惨剧，电脑里所有的环境都没了，hackday前才临时恢复，这里就简述一下最基本的环境搭建的步骤。</p>
 
-<h1>1.Why Android and Python？</h1>
+<h2>1.Why Android and Python？</h2>
 
 <p>这里的Eclipse用的是Google的Android开发套件（IDE+SDK）比较方便，所以这里拿Python当扩展的例子，参照本例你可以搭建 Android+C/C++/ 等环境都没有问题。</p>
 
-<h1>2.Let’s Begin</h1>
+<h2>2.Let’s Begin</h2>
 
-<h2>1）Get Java First！</h2>
+<h3>1）Get Java First！</h3>
 
 <p>要知道，Eclipse是用Java编写的一款优秀开源IDE，所以不论你是否会它来写Java/Android程序，你都需要先在电脑上建立Java环境以保证Eclipse的运行。</p>
 
-<h3>a.DownLoad JDK</h3>
+<h4>a.DownLoad JDK</h4>
 
 <p><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">DownLoad JDK</a> <br/>
 2009年4月Oracle收购了Sun，所以这里千万不要以为自己进错了网站   使用Windows的用户需要留意32/64bit版本的区别。</p>
