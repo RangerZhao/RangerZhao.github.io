@@ -57,8 +57,9 @@
 </hgroup>
 
 <nav id="main-nav"><ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/">首页</a></li>
+  <li><a href="/blog/archives">归档</a></li>
+  <li><a href="http://about.me/minxin.zhao">关于</a></li> 
 </ul>
 
 </nav>
@@ -93,20 +94,43 @@
 
 <h1>1.Why Android and Python？</h1>
 
-<p>这里的Eclipse用的是Google的Android开发套件（IDE+SDK）比较方便，所以这里拿Python当扩展的例子，参照本例你可以搭建 Android+C/C++/ 等环境都没有问题。</p>
+<p>这里的Eclipse用的是Google的Android开发套件（IDE+SDK）比较方便，所以这里拿Python当扩展的例子，参照本例你可以搭建 Android+C/C++/ 等环境都没有问题。<!--more--></p>
 
 <h1>2.Let’s Begin</h1>
 
 <h2>1）Get Java First！</h2>
 
-<p>要知道，Eclipse是用Java编写的一款优秀开源IDE，所以不论你是否会它来写Java/Android程序，你都需要先在电脑上建立Java环境以保证Eclipse的运行。</p>
+<p>Eclipse是用Java编写的一款优秀开源IDE，所以不论你是否会它来写Java/Android程序，你都需要先在电脑上建立Java环境以保证Eclipse的运行。</p>
 
 <h3>a.DownLoad JDK</h3>
 
 <p><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">DownLoad JDK</a> <br/>
 2009年4月Oracle收购了Sun，所以这里千万不要以为自己进错了网站   使用Windows的用户需要留意32/64bit版本的区别。</p>
 
-<p>111</p>
+<h3>b.设置环境变量</h3>
+
+<p>以Win7旗舰版为例：<br/>
+右击计算机->属性->高级系统设置->高级->环境变量 <br/>
+这里需要三个环境变量，分别是：JAVA_HOME，CLASS_PATH，PATH。前两个是你新建的，可以理解为你定义的宏，分别保存着JDK，LIB和/JRE/LIB的路径以供你在PATH（系统已有）中添加运行JAVA所需环境变量时引用。<br/>
+以我自己的为例：</p>
+
+<p>JAVA_HOME = W:\Jdk1.7,  <br/>
+CLASS_PATH = %JAVA_HOME%\lib;%JAVA_HOME%\jre\lib;<br/>
+Path中添加的值=%JAVA_HOME%/bin;%JAVA_HOME%/jre/bin;</p>
+
+<p>在CMD中输入java -version 如果出现如下字样就说明你的JDK安装成功了，此时Eclipse就可以正常启动了</p>
+
+<p>C:\Users\Administrator>java -version</p>
+
+<p>java version &ldquo;1.7.0_25&rdquo;</p>
+
+<p>Java&trade; SE Runtime Environment (build 1.7.0_25-b17)</p>
+
+<p>Java HotSpot&trade; 64-Bit Server VM (build 23.25-b01, mixed mode)</p>
+
+<h3>c.安装ADT和SDK</h3>
+
+<p>如果你前两部按照上文所述正确完成，此时你就会发现google自带的开发套件的好处，它已经帮我们创建了几个常用虚拟机，下载好常用SDK并且将ADT（Eclipse for Java ）和SDK都链接好了。此时你完全可以在Eclipse中编写你的Android程序并在虚拟机中运行了（ADT自带）。</p>
 </div>
 
 </article>
