@@ -2,19 +2,23 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://RangerZhao.github.io/blog/2013/09/14/2013-9-14/</loc>
-        <lastmod>2013-09-25T19:22:33+08:00</lastmod>
+        <lastmod>2013-09-25T19:34:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://RangerZhao.github.io/blog/2013/09/14/android-and-python-0/</loc>
-        <lastmod>2013-09-25T19:22:33+08:00</lastmod>
+        <lastmod>2013-09-25T19:34:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://RangerZhao.github.io/blog/archives/</loc>
-        <lastmod>2013-09-25T19:22:33+08:00</lastmod>
+        <lastmod>2013-09-25T19:34:06+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://RangerZhao.github.io/blog/categories/</loc>
+        <lastmod>2013-09-25T19:34:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://RangerZhao.github.io/</loc>
-        <lastmod>2013-09-25T19:22:33+08:00</lastmod>
+        <lastmod>2013-09-25T19:34:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://RangerZhao.github.io/robots.txt</loc>
