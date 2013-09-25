@@ -9,51 +9,40 @@
 	
 	<meta name="description" content="Category: ..">
 	
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="/atom.xml" rel="alternate" title="RangerZhao's Code House" type="application/atom+xml">
-	<link rel="canonical" href="">
+	
+	<link rel="canonical" href="http://RangerZhao.github.ioblog/categories/dot/">
 	<link href="/favicon.png" rel="shortcut icon">
 	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<script async="true" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 	
 </head>
 
 
 <body>
-	<header id="header" class="inner"><h1><a href="/">RangerZhao's Code House</a></h1>
-<nav id="main-nav"><ul class="main">
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><nav id="main-nav"><ul class="main">
 	<li><a href="/">Blog</a></li>
 	<li><a href="/blog/archives">Archives</a></li>
 </ul>
 </nav>
-<nav id="mobile-nav">
-	<div class="alignleft menu">
-		<a class="button">Menu</a>
-		<div class="container"><ul class="main">
-	<li><a href="/">Blog</a></li>
-	<li><a href="/blog/archives">Archives</a></li>
-</ul>
-</div>
-	</div>
-	<div class="alignright search">
-		<a class="button"></a>
-		<div class="container">
-			<form action="http://google.com/search" method="get">
-				<input type="text" name="q" results="0">
-				<input type="hidden" name="q" value="site:RangerZhao.github.io">
-			</form>
-		</div>
-	</div>
-</nav>
-<nav id="sub-nav" class="alignright">
+<!-- <nav id="sub-nav">
 	<div class="social">
 		
 		
 		
 		
-    
+		
 		
 		
 		
@@ -61,52 +50,68 @@
 		
 		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
 		
-    
 	</div>
-	<form class="search" action="http://google.com/search" method="get">
-		<input class="alignright" type="text" name="q" results="0">
-		<input type="hidden" name="q" value="site:RangerZhao.github.io">
-	</form>
-</nav>
-
+</nav> -->
+<div class="profile-container">
+  <div class="profilepic">
+    <script src="/javascripts/md5.js"></script>
+    <script type="text/javascript">
+$(function(){
+  $('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+});
+    </script>
+  </div>
+  <hgroup>
+  <h1 class="site-title"><a href="/">RangerZhao's Code House</a></h1>
+  
+  <p class="site-subtitle">Two years' trying + HackDay = A new begining!</p>
+  
+  </hgroup>
+  
+</div>
 </header>
-	
-		
-	
-	<div id="content" class="inner">
-	
+			</div>
+		</div>
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="article-inner"><div class="archive-page-wrapper">
+  
+    
 
 
 	
 	
 	<section class="archives"><h1 class="year">2013</h1>
-	
-	</section>
-	
 
-<article>
-	<h2 class="title"><a href="/blog/2013/09/14/2013-9-14/">就这样开始吧</a></h2>
+<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="meta">
-		<div class="date">Sep 14</div>
-		<div class="tags">
+		<span class="tags">
 
 
 	<a class='category' href='/blog/categories/dot/'>..</a>
 
 
-</div>
+</span>
 	    
 	</div>
+	<h1 class="archive-title" itemprop="name"><a href="/blog/2013/09/14/2013-9-14/">就这样开始吧</a></h1>
 </article>
 
-
+  
 </div>
-	<footer id="footer" class="inner">Copyright &copy; 2013
+</div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2013
 
     MinXing Zhao
 
+
+<p>Theme: <a href="https://github.com/qingwang/octopress-theme-yinyang">YinYang</a></p>
 </footer>
-	<script src="/javascripts/slash.js"></script>
+			<script src="/javascripts/slash.js"></script>
 <script src="/javascripts/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
 (function($){
@@ -119,5 +124,7 @@
 
 
 
+		</div>
+	</div>
 </body>
 </html>

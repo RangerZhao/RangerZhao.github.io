@@ -7,53 +7,42 @@
 	<meta name="author" content="MinXing Zhao">
 
 	
-	<meta name="description" content="之前遭遇了硬盘坏掉的惨剧，电脑里所有的环境都没了，hackday前才临时恢复，这里就简述一下最基本的环境搭建的步骤。 1.Why Android and Python？ 这里的Eclipse用的是Google的Android开发套件（IDE+SDK）比较方便，所以这里拿Python当扩展的例子， &hellip;">
+	<meta name="description" content="Android && Python 环境搭建以及Hello World Sep 14th, 2013 之前遭遇了硬盘坏掉的惨剧，电脑里所有的环境都没了，hackday前才临时恢复，这里就简述一下最基本的环境搭建的步骤。 1.Why Android and Python？ &hellip;">
 	
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="/atom.xml" rel="alternate" title="RangerZhao's Code House" type="application/atom+xml">
-	<link rel="canonical" href="">
+	
+	<link rel="canonical" href="http://RangerZhao.github.io/blog/2013/09/14/android-and-python-0/">
 	<link href="/favicon.png" rel="shortcut icon">
 	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<script async="true" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 	
 </head>
 
 
 <body>
-	<header id="header" class="inner"><h1><a href="/">RangerZhao's Code House</a></h1>
-<nav id="main-nav"><ul class="main">
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><nav id="main-nav"><ul class="main">
 	<li><a href="/">Blog</a></li>
 	<li><a href="/blog/archives">Archives</a></li>
 </ul>
 </nav>
-<nav id="mobile-nav">
-	<div class="alignleft menu">
-		<a class="button">Menu</a>
-		<div class="container"><ul class="main">
-	<li><a href="/">Blog</a></li>
-	<li><a href="/blog/archives">Archives</a></li>
-</ul>
-</div>
-	</div>
-	<div class="alignright search">
-		<a class="button"></a>
-		<div class="container">
-			<form action="http://google.com/search" method="get">
-				<input type="text" name="q" results="0">
-				<input type="hidden" name="q" value="site:RangerZhao.github.io">
-			</form>
-		</div>
-	</div>
-</nav>
-<nav id="sub-nav" class="alignright">
+<!-- <nav id="sub-nav">
 	<div class="social">
 		
 		
 		
 		
-    
+		
 		
 		
 		
@@ -61,21 +50,51 @@
 		
 		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
 		
-    
 	</div>
-	<form class="search" action="http://google.com/search" method="get">
-		<input class="alignright" type="text" name="q" results="0">
-		<input type="hidden" name="q" value="site:RangerZhao.github.io">
-	</form>
-</nav>
-
+</nav> -->
+<div class="profile-container">
+  <div class="profilepic">
+    <script src="/javascripts/md5.js"></script>
+    <script type="text/javascript">
+$(function(){
+  $('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+});
+    </script>
+  </div>
+  <hgroup>
+  <h1 class="site-title"><a href="/">RangerZhao's Code House</a></h1>
+  
+  <p class="site-subtitle">Two years' trying + HackDay = A new begining!</p>
+  
+  </hgroup>
+  
+</div>
 </header>
-	
-		
-	
-	<div id="content" class="inner"><article class="post">
-	<h2 class="title">Android && Python 环境搭建以及Hello World</h2>
-	<div class="entry-content"><p>之前遭遇了硬盘坏掉的惨剧，电脑里所有的环境都没了，hackday前才临时恢复，这里就简述一下最基本的环境搭建的步骤。</p>
+			</div>
+		</div>
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="article-inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  
+	<h1 class="title" itemprop="name">Android && Python 环境搭建以及Hello World</h1>
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+  <div class="post-date"><time datetime="2013-09-14T11:19:00+08:00" data-updated="true" itemprop="datePublished">Sep 14<span>th</span>, 2013</time></div>
+	<div class="entry-content" itemprop="articleBody"><p>之前遭遇了硬盘坏掉的惨剧，电脑里所有的环境都没了，hackday前才临时恢复，这里就简述一下最基本的环境搭建的步骤。</p>
 
 <h2>1.Why Android and Python？</h2>
 
@@ -95,46 +114,29 @@
 <p>111</p>
 </div>
 
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-09-14T11:19:00+08:00" pubdate data-updated="true">Sep 14<span>th</span>, 2013</time></div>
-	<div class="tags">
-
-</div>
-	
-</div>
 </article>
 
 	<div class="share">
-	<div class="addthis_toolbox addthis_default_style ">
-		
-		
-		
-		
-	</div>
+	<div class="share_icon_group addthis_toolbox addthis_default_style addthis_32x32_style">
 	
+	
+	
+	<a class="share_icon addthis_button_preferred_4"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid="></script>
 </div>
 
 
 </div>
-	<footer id="footer" class="inner">Copyright &copy; 2013
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2013
 
     MinXing Zhao
 
+
+<p>Theme: <a href="https://github.com/qingwang/octopress-theme-yinyang">YinYang</a></p>
 </footer>
-	<script src="/javascripts/slash.js"></script>
+			<script src="/javascripts/slash.js"></script>
 <script src="/javascripts/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
 (function($){
@@ -147,5 +149,7 @@
 
 
 
+		</div>
+	</div>
 </body>
 </html>
