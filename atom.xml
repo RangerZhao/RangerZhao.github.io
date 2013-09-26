@@ -4,7 +4,7 @@
   <title><![CDATA[RangerZhao's Code House]]></title>
   <link href="http://RangerZhao.github.io/atom.xml" rel="self"/>
   <link href="http://RangerZhao.github.io/"/>
-  <updated>2013-09-25T22:58:57+08:00</updated>
+  <updated>2013-09-26T10:33:36+08:00</updated>
   <id>http://RangerZhao.github.io/</id>
   <author>
     <name><![CDATA[MinXing Zhao]]></name>
@@ -26,7 +26,7 @@
 
 <h1>2.Let’s Begin</h1>
 
-<h2>1）Get Java First！</h2>
+<h2>1）Get Android First！</h2>
 
 <p>Eclipse是用Java编写的一款优秀开源IDE，所以不论你是否会它来写Java/Android程序，你都需要先在电脑上建立Java环境以保证Eclipse的运行。</p>
 
@@ -42,23 +42,95 @@
 这里需要三个环境变量，分别是：JAVA_HOME，CLASS_PATH，PATH。前两个是你新建的，可以理解为你定义的宏，分别保存着JDK，LIB和/JRE/LIB的路径以供你在PATH（系统已有）中添加运行JAVA所需环境变量时引用。<br/>
 以我自己的为例：</p>
 
-<p>JAVA_HOME = W:\Jdk1.7,  <br/>
+<blockquote><p>JAVA_HOME = W:\Jdk1.7,  <br/>
 CLASS_PATH = %JAVA_HOME%\lib;%JAVA_HOME%\jre\lib;<br/>
-Path中添加的值=%JAVA_HOME%/bin;%JAVA_HOME%/jre/bin;</p>
+Path中添加的值=%JAVA_HOME%/bin;%JAVA_HOME%/jre/bin;</p></blockquote>
 
 <p>在CMD中输入java -version 如果出现如下字样就说明你的JDK安装成功了，此时Eclipse就可以正常启动了</p>
 
-<p>C:\Users\Administrator>java -version</p>
+<blockquote><p>C:\Users\Administrator>java -version</p>
 
 <p>java version &ldquo;1.7.0_25&rdquo;</p>
 
 <p>Java&trade; SE Runtime Environment (build 1.7.0_25-b17)</p>
 
-<p>Java HotSpot&trade; 64-Bit Server VM (build 23.25-b01, mixed mode)</p>
+<p>Java HotSpot&trade; 64-Bit Server VM (build 23.25-b01, mixed mode)</p></blockquote>
 
 <h3>c.安装ADT和SDK</h3>
 
 <p>如果你前两部按照上文所述正确完成，此时你就会发现google自带的开发套件的好处，它已经帮我们创建了几个常用虚拟机，下载好常用SDK并且将ADT（Eclipse for Java ）和SDK都链接好了。此时你完全可以在Eclipse中编写你的Android程序并在虚拟机中运行了（ADT自带）。</p>
+
+<p>当然，如果你想使用其他版本的SDK和虚拟机的话，就可以使用红框里的两个工具下载SDK和新建虚拟机<br/>
+<img src="https://lh6.googleusercontent.com/-aJyI-D57dpU/UkL_IlslRKI/AAAAAAAAAaE/uG3jLC8o39c/s912/QQ%25E6%2588%25AA%25E5%259B%25BE20130925231947.jpg" alt="" /></p>
+
+<p>毕竟我们还可能用到真机调试，所以就要配置一下ADT的环境变量，主要是调用ADT下的tools和最终要的adb(Andrioid Debug Bridge)</p>
+
+<p>在PATH中添加：</p>
+
+<blockquote><p>W:\adt-bundle-windows-x86_64-20130729\sdk\platform-tools;（adb在这里）<br/>
+ W:\adt-bundle-windows-x86_64-20130729\sdk\tools；</p></blockquote>
+
+<p>接下来如果配置正确的话，在cmd中输入adb就会看到如下结果：</p>
+
+<p><img src="https://lh4.googleusercontent.com/-fG_db_j92t4/UkMCUMVkNOI/AAAAAAAAAaQ/3aVXwVLXhNs/s574/QQ%25E6%2588%25AA%25E5%259B%25BE20130925233320.jpg" alt="" /></p>
+
+<p>这样我们就可以使用真机运行你编写好的Android程序了</p>
+
+<h2>2）Get Python/C/C++/..</h2>
+
+<h3>a.Think about it</h3>
+
+<p>就我自己而言，之前配环境也就是学着别人的教程一步步配下来，可是难道每当我们的环境变量挂了或是又要用到新的开发工具时都要盲目的去搜教程然后照做吗？所以有必要想想我们敲那么长的命令究竟做了什么。</p>
+
+<blockquote><p>环境变量</p>
+
+<p>在所有 Unix 和 类Unix系统中, 每个进程都有其各自的环境变量设置。 缺省情况下, 当一个进程被创建时， 除了创建过程中的明确更改外，它继承了其父进程的绝大部分环境设置。 在API层级上, 使用fork和exec函数进行变量设置。或利用bashshell文件, 使用特殊的命令调用来改变环境变量：通过env 间接替代或者使用ENVIRONMENT_VARIABLE=VALUE &lt;command标识. 所有的Unix操作系统 以及DOS 和Microsoft Windows 都是用环境变量，但是它们使用不同的环境变量名称。我们可以通过运行程序来访问环境变量的值。环境变量的例子包括：</p>
+
+<p>PATH 罗列出 shell 搜索 user 输入的执行命令所在的目录。</p>
+
+<p>HOME (类Unix系统) 和 userprofile (Microsoft Windows) 表示用户的主目录在文件系统中的位置。</p>
+
+<p>TERM (类Unix系统) 指定使用computer terminal 或 terminal emulator 的类型 (如, vt100 or dumb)。</p>
+
+<p>CVS_RSH (类Unix系统) 该选项可用于 ext 方式中指明 cvs 客户端寻找远端 shell 的路径，用作连接 cvs 服务器和以更高的优先权覆盖 $CVS_RSH 环境变量中指定的路径。</p>
+
+<p>MAIL (类Unix系统) 当前用户的邮件存放目录。</p>
+
+<p>Shell 脚本 和 批处理文件 使用环境变量来存储临时值，用于以后在脚本中引用，也用于传递数据和参数给子进程。 在Unix系统中，一个在脚本或程序中更改的环境变量值只会影响该进程，亦可能影响其子进程。其父进程和无关进程将不受影响。在DOS中，更改或删除一个批处理文件中的环境变量值将改变变量的期限命令的存在。
+在Unix系统通过初始化脚本启动时，环境变量通常会在此时被初始化，因此会被系统中的其它进程所继承。用户可以而且经常添加环境变量到他们使用的shell脚本中。 在Windows系统中，环境变量的缺省值存储在 windows 注册表 中，或者在 autoexec.bat 自动执行的批处理文件中设置。</p></blockquote>
+
+<p>从维基百科的解释中我们可以了解到我们配的PATH和HOME类的环境变量的作用就可以很清楚了：对Windows操作系统来说，Path是让操作系统可以找到.exe执行程序的存在，而对于Java执行环境来说，Classpath就是让JVM可以找到.class执行程序的存在，其它的环境以此类推。</p>
+
+<h3>b.Do by our self</h3>
+
+<p>按刚才的思路，首先我们要下载python</p>
+
+<p><a href="http://www.python.org/getit/">Download Python</a></p>
+
+<p>找到它的位置<br/>
+<img src="https://lh4.googleusercontent.com/-GQQdsbDwlQY/UkMIfLMEmLI/AAAAAAAAAag/YTo3syfWQUA/s829/4f6cdf321a671996911022a7b1793b86.jpg" alt="" /></p>
+
+<p>然后在path里添加</p>
+
+<blockquote><p>D:\python3.2</p></blockquote>
+
+<p>接下来在cmd中测试它：</p>
+
+<p><img src="https://lh5.googleusercontent.com/-nIBQjN4VtEQ/UkMJUSNkT9I/AAAAAAAAAak/6nmlBIBuB0M/s641/QQ%25E6%2588%25AA%25E5%259B%25BE20130926000323.jpg" alt="" /></p>
+
+<p>看到这个说明我们安装成功了。</p>
+
+<p>然后就是在Eclipse中添加对python的IDE扩展</p>
+
+<p><img src="https://lh6.googleusercontent.com/-1A4YirigzEw/UkMKMX6BHlI/AAAAAAAAAaw/8T9p4kMr1eA/s512/c1ca2f4b-0634-3c41-879e-e3871e4f8b14.jpg" alt="" /></p>
+
+<p>输入网址后，给PyDev打勾然后一路Next就可以了。</p>
+
+<p>安装完成后，就可以在Eclipse中添加python的编辑模块</p>
+
+<p><img src="https://lh6.googleusercontent.com/-npq3Xu3CM0o/UkObZVpJFII/AAAAAAAAAa8/c2cGQat2tvs/s640/QQ%25E6%2588%25AA%25E5%259B%25BE20130926102640.jpg" alt="" /></p>
+
+<p>通过第2）步的过程，相信你可以有自己的思考分析过程，不用每次添加都Google个不停了！</p>
 ]]></content>
   </entry>
   
