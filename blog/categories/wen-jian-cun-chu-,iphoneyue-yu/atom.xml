@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 文件存储，iphone越狱 | RangerZhao's Code House]]></title>
+  <link href="http://RangerZhao.github.io/blog/categories/wen-jian-cun-chu-,iphoneyue-yu/atom.xml" rel="self"/>
+  <link href="http://RangerZhao.github.io/"/>
+  <updated>2013-09-26T12:40:28+08:00</updated>
+  <id>http://RangerZhao.github.io/</id>
+  <author>
+    <name><![CDATA[MinXing Zhao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[使用越狱iphone4s转存.iso造成文件损坏]]></title>
+    <link href="http://RangerZhao.github.io/blog/2013/09/26/iphone/"/>
+    <updated>2013-09-26T12:32:00+08:00</updated>
+    <id>http://RangerZhao.github.io/blog/2013/09/26/iphone</id>
+    <content type="html"><![CDATA[<p>昨天帮同学装虚拟机的时候遇到了一个比较隐蔽的问题。<br/>
+因为两个人都没带U盘，就打算用她的iphone4s（已经越狱）当做移动硬盘使用，使用《快用苹果助手》这个软件，将VMware的安装包和CentOS6.4的镜像文件由她的iphone4s转存再拷贝到她的电脑上。VM正确安装，但是等加载镜像安装linux时就报了如下错误：<br/>
+<img src="https://lh5.googleusercontent.com/-SWtW8zaysZo/UkO4sf_IK-I/AAAAAAAAAbQ/AzFbPT3xY_4/s704/QQ%25E5%259B%25BE%25E7%2589%258720130926123137.jpg" alt="" /></p>
+
+<p>提示iso文件损坏，但是这个iso包括VM的安装文件当时在我的电脑上运行都完全正常，目前还不知道这个问题的具体原因，等待后续探究。</p>
+]]></content>
+  </entry>
+  
+</feed>
